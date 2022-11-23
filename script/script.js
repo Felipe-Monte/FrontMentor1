@@ -1,4 +1,5 @@
 function myScope() {
+
     const list = document.querySelectorAll('li')
     const submit = document.querySelector('.btn')
     const secondCard = document.querySelector('.container-second-card')
@@ -11,18 +12,25 @@ function myScope() {
             for (let j = 0; j < list.length; j++) {
                 const color = list[j] === item ? '#FC7614' : '#262E38'
                 list[j].style.backgroundColor = color
+                list[j].classList.add('clicou')
             }
             textSpan.innerHTML = item.value
-
         })
     }
 
     submit.addEventListener('click', function (e) {
-        secondCard.style.display = 'block'
+        for (let f = 0; f < list.length; f++) {
+            if (list[f].classList.contains('clicou')) {
+                secondCard.style.display = 'block'
+            } else {
+                return alert('Selecione um elemento')
+            }
+        }
     })
 
     btnBack.addEventListener('click', function (e) {
         secondCard.style.display = 'none'
     })
 }
+
 myScope()
