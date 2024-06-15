@@ -175,3 +175,7 @@ button.btn-second:active {
 .clicou {
     color: white;
 }
+
+.red {
+    background-color: red !important;
+}
