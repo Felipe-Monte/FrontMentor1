@@ -176,6 +176,6 @@ button.btn-second:active {
     color: white;
 }
 
-.red {
-    background-color: red !important;
+.clicked {
+    background-color: #FC7614 !important;
 }
