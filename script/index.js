@@ -1,6 +1,6 @@
-//REFACTORING
 document.addEventListener("DOMContentLoaded", function () {
   const allOptionsLi = document.querySelectorAll("li");
+  const btnSubmit = document.querySelector(".btn")
 
   allOptionsLi.forEach((option) => {
     option.addEventListener("click", function () {
@@ -8,4 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("red");
     });
   });
+
+  btnSubmit.addEventListener("click", function () {
+    allOptionsLi.forEach((opt) => {
+      console.log(opt.classList.contains('red'))
+    })
+  })
 });
+
+
