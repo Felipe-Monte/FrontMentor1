@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btnSubmit.addEventListener("click", function () {
     allOptionsLi.forEach((opt) => {
-      console.log(opt.classList.contains('red'))
+      if(opt.classList.contains('red')){
+        console.log(opt)
+      }
     })
   })
 });
