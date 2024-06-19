@@ -1,4 +1,4 @@
-//refactoclicked
+//refactored
 document.addEventListener("DOMContentLoaded", function () {
   const allOptionsLi = document.querySelectorAll("li");
   const secondCard = document.querySelector(".container-second-card");
